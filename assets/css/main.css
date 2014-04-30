@@ -278,13 +278,7 @@ hr {
     visibility: hidden;
 }
 
-@media (max-width: 700px) {
-    .nav-header-text {
-        display: none;
-        padding-left: 0px;
-    }
-}
-
+@media (max-width: 768px) {
 .nav-header-text {
     padding-left: 5px;
 }
@@ -295,6 +289,12 @@ hr {
     margin-bottom: 10px;
 }
 
+@media (max-width: 700px) {
+    .nav-header-text {
+        display: none;
+        padding-left: 0px;
+    }
+}
 
 @media (max-width: 380px) {
     #section-topbar ul#nav a {

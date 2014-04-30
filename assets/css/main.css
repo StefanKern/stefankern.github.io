@@ -278,7 +278,7 @@ hr {
     visibility: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .nav-header-text {
         display: none;
         padding-left: 0px;
@@ -296,9 +296,9 @@ hr {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     #section-topbar ul#nav a {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 9px;
+        padding-right: 9px;
     }
 }

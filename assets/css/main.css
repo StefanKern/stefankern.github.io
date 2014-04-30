@@ -106,9 +106,6 @@ hr {
     margin: 0;
     padding: 0;
     border-right: 1px solid #222;
-    /* For IE, the outcast */
-    zoom: 1;
-    *display: inline;
 }
 
     #section-topbar ul#nav > li {
@@ -153,7 +150,7 @@ hr {
     background: url(../img/header_bg.jpg) no-repeat center top;
     padding-top: 140px;
     text-align: center;
-    background-attachment: relative;
+    /*background-attachment: relative;*/
     background-position: center center;
     min-height: 500px;
     width: 100%;

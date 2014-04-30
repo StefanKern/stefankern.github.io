@@ -294,3 +294,11 @@ hr {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+
+@media (max-width: 400px) {
+    #section-topbar ul#nav a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

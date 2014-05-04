@@ -105,7 +105,6 @@ hr {
     position: relative;
     margin: 0;
     padding: 0;
-    border-right: 1px solid #222;
 }
 
     #section-topbar ul#nav > li {
@@ -120,18 +119,15 @@ hr {
         font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-decoration: none;
         padding: 18px 20px 18px 20px;
-        border-left: 1px solid #222;
     }
 
         #section-topbar ul#nav a:hover {
             background: #222;
             text-decoration: none;
-            border-left: 1px solid #111;
         }
 
     #section-topbar ul#nav .active a {
         background: #44bbaa;
-        border-left: 1px solid #111;
     }
 
         #section-topbar ul#nav .active a:hover {
@@ -140,7 +136,14 @@ hr {
 
 #section-topbar i {
     font-size: 25px;
+    padding-right: 5px;
 }
+
+
+body h5 {
+    font-size: 15px;
+}
+
 /*---------------------------------------------------
 	SECTION WRAPS
 ---------------------------------------------------*/
@@ -298,5 +301,254 @@ hr {
     #section-topbar ul#nav a {
         padding-left: 9px;
         padding-right: 9px;
+    }
+}
+
+
+nav ul {
+    -webkit-animation: bounce 2s ease-out;
+    -moz-animation: bounce 10ms ease-out;
+    -o-animation: bounce 10ms ease-out;
+    animation: bounce 10s ease-out;
+}
+
+/* Webkit, Chrome and Safari */
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+
+    20% {
+        -webkit-transform: translateY(-80%);
+    }
+
+    25% {
+        -webkit-transform: translateY(0%);
+    }
+
+    30% {
+        -webkit-transform: translateY(-70%);
+    }
+
+    35% {
+        -webkit-transform: translateY(0%);
+    }
+
+    40% {
+        -webkit-transform: translateY(-60%);
+    }
+
+    45% {
+        -webkit-transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(-50%);
+    }
+
+    55% {
+        -webkit-transform: translateY(0%);
+    }
+
+    60% {
+        -webkit-transform: translateY(-30%);
+    }
+
+    65% {
+        -webkit-transform: translateY(0%);
+    }
+
+    70% {
+        -webkit-transform: translateY(-15%);
+    }
+
+    75% {
+        -webkit-transform: translateY(0);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10%);
+    }
+
+    85% {
+        -webkit-transform: translateY(0);
+    }
+
+    90% {
+        -webkit-transform: translateY(-5%);
+    }
+
+    95% {
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes bounce {
+    0% {
+        -moz-transform: translateY(-100%);
+    }
+
+    5% {
+        -moz-transform: translateY(-100%);
+    }
+
+    15% {
+        -moz-transform: translateY(0);
+    }
+
+    30% {
+        -moz-transform: translateY(-50%);
+    }
+
+    40% {
+        -moz-transform: translateY(0%);
+    }
+
+    50% {
+        -moz-transform: translateY(-30%);
+    }
+
+    70% {
+        -moz-transform: translateY(0%);
+    }
+
+    80% {
+        -moz-transform: translateY(-15%);
+    }
+
+    90% {
+        -moz-transform: translateY(0%);
+    }
+
+    95% {
+        -moz-transform: translateY(-10%);
+    }
+
+    97% {
+        -moz-transform: translateY(0%);
+    }
+
+    99% {
+        -moz-transform: translateY(-5%);
+    }
+
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+
+/* Opera 12.0 */
+@-o-keyframes bounce {
+    0% {
+        -o-transform: translateY(-100%);
+    }
+
+    5% {
+        -o-transform: translateY(-100%);
+    }
+
+    15% {
+        -o-transform: translateY(0);
+    }
+
+    30% {
+        -o-transform: translateY(-50%);
+    }
+
+    40% {
+        -o-transform: translateY(0%);
+    }
+
+    50% {
+        -o-transform: translateY(-30%);
+    }
+
+    70% {
+        -o-transform: translateY(0%);
+    }
+
+    80% {
+        -o-transform: translateY(-15%);
+    }
+
+    90% {
+        -o-transform: translateY(0%);
+    }
+
+    95% {
+        -o-transform: translateY(-10%);
+    }
+
+    97% {
+        -o-transform: translateY(0%);
+    }
+
+    99% {
+        -o-transform: translateY(-5%);
+    }
+
+    100% {
+        -o-transform: translateY(0);
+    }
+}
+
+/* W3, Opera 12+, Firefox 16+ */
+@keyframes bounce {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    5% {
+        transform: translateY(-100%);
+    }
+
+    15% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-50%);
+    }
+
+    40% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-30%);
+    }
+
+    70% {
+        transform: translateY(0%);
+    }
+
+    80% {
+        transform: translateY(-15%);
+    }
+
+    90% {
+        transform: translateY(0%);
+    }
+
+    95% {
+        transform: translateY(-7%);
+    }
+
+    97% {
+        transform: translateY(0%);
+    }
+
+    99% {
+        transform: translateY(-3%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

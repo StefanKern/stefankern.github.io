@@ -198,14 +198,14 @@ body h5 {
     }
 
 
-#skillswrap {
+#skillswrap, #Haftungsausschluss {
     background: #2c3e50;
     padding-top: 60px;
     padding-bottom: 60px;
     color: white;
 }
 
-    #skillswrap h5, p {
+    #skillswrap h5, #skillswrap p , #Haftungsausschluss h2, #Haftungsausschluss h3, #Haftungsausschluss p {
         color: white;
     }
 
@@ -551,4 +551,8 @@ nav ul {
     100% {
         transform: translateY(0);
     }
+}
+
+.haftungsausschluss {
+	float: left;
 }

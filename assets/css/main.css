@@ -556,3 +556,7 @@ nav ul {
 .haftungsausschluss {
 	float: left;
 }
+
+.work section, .work header{
+	margin-top: 1em;
+}

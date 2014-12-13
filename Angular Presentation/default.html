@@ -7,18 +7,42 @@
     <link href="stdlibs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/default.css" rel="stylesheet" />
 
+    <script src="stdlibs/jquery-2.1.1.min.js"></script>
     <script src="stdlibs/angular.min.js"></script>
+    <script src="stdlibs/angular-animate.min.js"></script>
     <script src="stdlibs/angular-route.min.js"></script>
     <script src="stdlibs/angular-sanitize.min.js"></script>
     <script src="js/angularControllers.js"></script>
 </head>
 
-<body ng-app="app">
+<body ng-app="app" >
 
-    <main class="container" id="wrapper">
-        <div ng-view>
+    <main class="container view-animate-container" id="wrapper">
+        <div ng-view class="view-animate">
         </div>
     </main>
 
+    <script>
+        $(document).keydown(function (e) {
+            switch (e.which) {
+                case 37: // left
+                    window.history.back();
+                    break;
+
+                case 38: // up
+                    break;
+
+                case 39: // right
+                    $('section a').first().click();
+                    break;
+
+                case 40: // down
+                    break;
+
+                default: return; // exit this handler for other keys
+            }
+            e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
+    </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
     // AngularJS Stuff
     var app = angular.module('app', [
-        'ngRoute']);
+        'ngRoute', 'ngAnimate']);
 
     app.controller('AgendaController', function ($scope, $http) {
     });
@@ -13,7 +13,7 @@
                 $scope.classic = false;
             }
             else {
-                $location.path("/Komplettpaket");
+                $location.path("/api");
             }
         }
     });
@@ -32,6 +32,9 @@
         .when('/spa', {
             templateUrl: 'directives/spa.html',
             controller: 'spaController'
+        })
+        .when('/api', {
+            templateUrl: 'directives/api.html'
         })
         .when('/Komplettpaket', {
             templateUrl: 'directives/Komplettpaket.html'

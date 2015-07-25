@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
-    margin-bottom: 25px;
 }
 
 .centered {
@@ -310,6 +309,19 @@ nav ul {
     -moz-animation: bounce 10ms ease-out;
     -o-animation: bounce 10ms ease-out;
     animation: bounce 10s ease-out;
+}
+
+.education .timespancolumn {
+	margin-top: 20px;
+}
+
+.education  h3.name {
+	margin-bottom: 3px;
+}
+
+.education .institute {
+	margin-top: 3px;
+	line-height: initial;
 }
 
 /* Webkit, Chrome and Safari */

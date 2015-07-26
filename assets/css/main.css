@@ -74,24 +74,8 @@ hr {
 	3.1 Topbar
 ---------------------------------------------------*/
 
-#section-topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-    overflow: visible;
-    font: normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-    #section-topbar a {
-        color: #fff;
-    }
-
-#topbar-inner {
-    background: #111;
-    line-height: 0;
-    text-align: center;
+nav.navbar {
+	margin-bottom: 0px;
 }
 
 /*
@@ -272,7 +256,7 @@ body h5 {
     }
 
 .nav-bar-positionfix {
-    padding-top: 60px;
+    padding-top: 50px;
     height: 0px;
     visibility: hidden;
 }
@@ -283,17 +267,8 @@ body h5 {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .nav-header-text {
-        padding-left: 5px;
-    }
-}
-
-@media (max-width: 700px) {
-    .nav-header-text {
-        display: none;
-        padding-left: 0px;
-    }
+.nav-header-text {
+	padding-left: 5px;
 }
 
 @media (max-width: 380px) {
@@ -352,247 +327,6 @@ nav ul {
 	color: #2c3e50;
 	background-color: white;
 	margin-bottom: 0px;
-}
-
-/* Webkit, Chrome and Safari */
-
-@-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translateY(-100%);
-    }
-
-    20% {
-        -webkit-transform: translateY(-80%);
-    }
-
-    25% {
-        -webkit-transform: translateY(0%);
-    }
-
-    30% {
-        -webkit-transform: translateY(-70%);
-    }
-
-    35% {
-        -webkit-transform: translateY(0%);
-    }
-
-    40% {
-        -webkit-transform: translateY(-60%);
-    }
-
-    45% {
-        -webkit-transform: translateY(0%);
-    }
-
-    50% {
-        -webkit-transform: translateY(-50%);
-    }
-
-    55% {
-        -webkit-transform: translateY(0%);
-    }
-
-    60% {
-        -webkit-transform: translateY(-30%);
-    }
-
-    65% {
-        -webkit-transform: translateY(0%);
-    }
-
-    70% {
-        -webkit-transform: translateY(-15%);
-    }
-
-    75% {
-        -webkit-transform: translateY(0);
-    }
-
-    80% {
-        -webkit-transform: translateY(-10%);
-    }
-
-    85% {
-        -webkit-transform: translateY(0);
-    }
-
-    90% {
-        -webkit-transform: translateY(-5%);
-    }
-
-    95% {
-        -webkit-transform: translateY(0);
-    }
-
-    100% {
-        -webkit-transform: translateY(0);
-    }
-}
-
-/* Mozilla Firefox 15 below */
-@-moz-keyframes bounce {
-    0% {
-        -moz-transform: translateY(-100%);
-    }
-
-    5% {
-        -moz-transform: translateY(-100%);
-    }
-
-    15% {
-        -moz-transform: translateY(0);
-    }
-
-    30% {
-        -moz-transform: translateY(-50%);
-    }
-
-    40% {
-        -moz-transform: translateY(0%);
-    }
-
-    50% {
-        -moz-transform: translateY(-30%);
-    }
-
-    70% {
-        -moz-transform: translateY(0%);
-    }
-
-    80% {
-        -moz-transform: translateY(-15%);
-    }
-
-    90% {
-        -moz-transform: translateY(0%);
-    }
-
-    95% {
-        -moz-transform: translateY(-10%);
-    }
-
-    97% {
-        -moz-transform: translateY(0%);
-    }
-
-    99% {
-        -moz-transform: translateY(-5%);
-    }
-
-    100% {
-        -moz-transform: translateY(0);
-    }
-}
-
-/* Opera 12.0 */
-@-o-keyframes bounce {
-    0% {
-        -o-transform: translateY(-100%);
-    }
-
-    5% {
-        -o-transform: translateY(-100%);
-    }
-
-    15% {
-        -o-transform: translateY(0);
-    }
-
-    30% {
-        -o-transform: translateY(-50%);
-    }
-
-    40% {
-        -o-transform: translateY(0%);
-    }
-
-    50% {
-        -o-transform: translateY(-30%);
-    }
-
-    70% {
-        -o-transform: translateY(0%);
-    }
-
-    80% {
-        -o-transform: translateY(-15%);
-    }
-
-    90% {
-        -o-transform: translateY(0%);
-    }
-
-    95% {
-        -o-transform: translateY(-10%);
-    }
-
-    97% {
-        -o-transform: translateY(0%);
-    }
-
-    99% {
-        -o-transform: translateY(-5%);
-    }
-
-    100% {
-        -o-transform: translateY(0);
-    }
-}
-
-/* W3, Opera 12+, Firefox 16+ */
-@keyframes bounce {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    5% {
-        transform: translateY(-100%);
-    }
-
-    15% {
-        transform: translateY(0);
-    }
-
-    30% {
-        transform: translateY(-50%);
-    }
-
-    40% {
-        transform: translateY(0%);
-    }
-
-    50% {
-        transform: translateY(-30%);
-    }
-
-    70% {
-        transform: translateY(0%);
-    }
-
-    80% {
-        transform: translateY(-15%);
-    }
-
-    90% {
-        transform: translateY(0%);
-    }
-
-    95% {
-        transform: translateY(-7%);
-    }
-
-    97% {
-        transform: translateY(0%);
-    }
-
-    99% {
-        transform: translateY(-3%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
 
 .haftungsausschluss {
